@@ -1,7 +1,6 @@
 ﻿#include <iostream>
+#include "getVolumeSurface.h"
 using namespace std;
-
-void VolumeSurface(double,double,double,double&,double&);
 
 int main()
 {
@@ -17,11 +16,6 @@ int main()
     string e;
     cin >> e;
     return 0;
-}
-
-void VolumeSurface(double width, double height, double depth, double &volume, double &surface) {
-    volume = (width * height + width * depth + height * depth) * 2;
-    surface = width * height * depth;
 }
 
 
